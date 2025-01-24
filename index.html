@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="https://kit.fontawesome.com/e2fbb3b308.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <img src="img/main.jpg" alt="">
+        <h1>Отзывы о садиках</h1>
+        <p>начните искать</p>
+            <input type="text" name="search-bar" id="">
+            <input type="submit" name="" id="">
+        </form>
+    </div>
+
+
+    <div class="container">
+        <h2>Топ садики</h2>
+        <div class="slider">
+          <div class="card">
+            <img src="img/room1.jpg" alt="90 sadik" class="card-image" data-name="90 sadik" data-address="Address 1" data-rating="5">
+            <h3>90 sadik</h3>
+            <p>Address 1</p>
+            <span>⭐⭐⭐⭐⭐</span>
+            <p>Rating: 5</p>
+          </div>
+      
+          <div class="card">
+            <img src="img/room2.jpg" alt="Example Sadik" class="card-image" data-name="Example Sadik" data-address="Address 2" data-rating="4">
+            <h3>Example Sadik</h3>
+            <p>Address 2</p>
+            <span>⭐⭐⭐⭐</span>
+            <p>Rating: 4</p>
+          </div>
+
+          <div class="card">
+            <img src="img/room1.jpg" alt="90 sadik" class="card-image" data-name="90 sadik" data-address="Address 1" data-rating="5">
+            <h3>90 sadik</h3>
+            <p>Address 1</p>
+            <span>⭐⭐⭐⭐⭐</span>
+            <p>Rating: 5</p>
+          </div>
+      
+          <div class="card">
+            <img src="img/room2.jpg" alt="Example Sadik" class="card-image" data-name="Example Sadik" data-address="Address 2" data-rating="4">
+            <h3>Example Sadik</h3>
+            <p>Address 2</p>
+            <span>⭐⭐⭐⭐</span>
+            <p>Rating: 4</p>
+          </div>
+      
+        </div>
+      </div>
+      
+      <div id="image-modal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <img src="" alt="" id="modal-image">
+          <h3 id="modal-name"></h3>
+          <p id="modal-address"></p>
+          <p id="modal-rating"></p>
+        </div>
+      </div>
+      
+
+          <div class="container">
+              <h2>Добавить отзыв</h2>
+              <form id="review-form">
+                  <input type="text" name="kindergarten-name" id="kindergarten-name" placeholder="Название садика">
+                  <small class="error-message" id="name-error">Пожалуйста, введите название садика.</small>
+                  
+                  <p>Ваша оценка</p>
+                  <div>
+                    <input type="radio" id="rating-1" name="rating" value="1">
+                    <label for="rating-1">1</label>
+                    <input type="radio" id="rating-2" name="rating" value="2">
+                    <label for="rating-2">2</label>
+                    <input type="radio" id="rating-3" name="rating" value="3">
+                    <label for="rating-3">3</label>
+                    <input type="radio" id="rating-4" name="rating" value="4">
+                    <label for="rating-4">4</label>
+                    <input type="radio" id="rating-5" name="rating" value="5">
+                    <label for="rating-5">5</label>
+                  </div>
+                  <small class="error-message" id="rating-error">Пожалуйста, выберите оценку.</small>
+
+                  <p>Опишите подробнее</p>
+                  <input type="text" placeholder="ваш комментарий">
+      
+                  <p>Что вам понравилось?</p>
+                  <input type="checkbox" id="clean">
+                  <label for="clean">Чисто</label>
+                  <input type="checkbox" id="delicious">
+                  <label for="delicious">Вкусно</label>
+                  <input type="checkbox" id="staff">
+                  <label for="staff">Воспитатель</label>
+                  <input type="checkbox" id="manager">
+                  <label for="manager">Управляющий</label>
+      
+                  <input type="submit" value="Отправить">
+              </form>
+          </div>
+      </body>
+      </html>
+      
